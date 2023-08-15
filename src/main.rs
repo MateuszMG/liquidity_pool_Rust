@@ -91,7 +91,6 @@ impl LpPool {
     }
 
     fn swap(&mut self, staked_token_amount: u64) -> Result<u64, Errors> {
-
         if staked_token_amount ==0  {
             return Err(Errors::PropertyMustBeGreaterThanZero);
         }
